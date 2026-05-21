@@ -1,0 +1,142 @@
+.summary-page__content {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+.summary-page__warning {
+  padding: 26px;
+  background: var(--color-yellow);
+  color: #111827;
+  border-left: 10px solid #ca8a04;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.summary-page__warning-header {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.summary-page__warning-header p {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.summary-page__warning-main {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.summary-page__card {
+  padding: 36px;
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.summary-page__rows {
+  display: grid;
+  gap: 16px;
+  font-size: 24px;
+}
+
+.summary-page__signature,
+.summary-page__signed {
+  margin-top: 36px;
+  display: grid;
+  gap: 20px;
+}
+
+.summary-page__signature-title {
+  color: var(--color-blue);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.signature-pad {
+  display: grid;
+  gap: 14px;
+}
+
+.signature-pad__canvas-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  border: 3px dashed #94a3b8;
+  border-radius: var(--radius-lg);
+  touch-action: none;
+}
+
+.signature-pad__canvas {
+  display: block;
+  width: 100%;
+  height: 260px;
+  background:
+    linear-gradient(to bottom, transparent 82%, rgba(0, 59, 113, 0.18) 82%),
+    #ffffff;
+  touch-action: none;
+}
+
+.signature-pad__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.signature-pad__hint {
+  color: #475569;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.signature-pad__clear {
+  min-width: 140px;
+  padding: 14px 20px;
+  background: #e5e7eb;
+  color: var(--color-black);
+  border-radius: var(--radius-sm);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.signature-pad__clear:disabled {
+  opacity: 0.45;
+}
+
+.summary-page__signature-preview {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #ffffff;
+  border: 2px solid #d1d5db;
+  border-radius: var(--radius-md);
+}
+
+.summary-page__button {
+  width: 100%;
+  padding: 24px;
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.summary-page__button--validate {
+  background: var(--color-green);
+}
+
+.summary-page__button--validate:disabled {
+  background: #cbd5e1;
+  color: #64748b;
+}
+
+.summary-page__button--close {
+  background: var(--color-blue);
+}
