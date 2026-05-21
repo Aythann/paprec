@@ -9,7 +9,6 @@ import ProgressBar from "../components/common/ProgressBar";
 
 export default function VehiclePage() {
   const navigate = useNavigate();
-
   const { session, updateSession } = useApp();
 
   const languageKey = session.language?.key || "en";
@@ -18,7 +17,9 @@ export default function VehiclePage() {
     vehiclePageTranslations[languageKey] || vehiclePageTranslations.en;
 
   const canValidate =
-    session.equipmentType && session.packagingType && session.materialType;
+    Boolean(session.equipmentType) &&
+    Boolean(session.packagingType) &&
+    Boolean(session.materialType);
 
   const selectOption = (key, value) => {
     updateSession({

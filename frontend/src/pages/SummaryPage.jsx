@@ -25,6 +25,12 @@ export default function SummaryPage() {
   const vehicleTranslations =
     vehiclePageTranslations[languageKey] || vehiclePageTranslations.en;
 
+  const currentSignature = isExitSession
+    ? session.exitSignature
+    : session.entrySignature || session.signature;
+
+  const hasSignature = Boolean(currentSignature);
+
   const getTranslatedValue = (items, key) => {
     if (!key) return "-";
 
@@ -48,11 +54,18 @@ export default function SummaryPage() {
     session.materialType,
   );
 
-  const hasSignature = Boolean(session.signature);
-
   const updateSignature = (signature) => {
+    if (isExitSession) {
+      updateSession({
+        exitSignature: signature,
+      });
+
+      return;
+    }
+
     updateSession({
       signature,
+      entrySignature: signature,
     });
   };
 
@@ -64,7 +77,6 @@ export default function SummaryPage() {
     if (isExitSession) {
       updateSession({
         exitTime: validationTime,
-        exitSignature: session.signature,
         endTime: validationTime,
       });
 
@@ -73,11 +85,15 @@ export default function SummaryPage() {
     }
 
     updateSession({
+      entryValidationTime: validationTime,
       endTime: validationTime,
     });
 
     addActiveSession({
       ...session,
+      signature: currentSignature,
+      entrySignature: currentSignature,
+      entryValidationTime: validationTime,
       endTime: validationTime,
     });
   };
@@ -110,7 +126,6 @@ export default function SummaryPage() {
             </p>
 
             <p>{translations.warningText1}</p>
-
             <p>{translations.warningText2}</p>
           </div>
         )}
@@ -178,7 +193,7 @@ export default function SummaryPage() {
               </h2>
 
               <SignaturePad
-                value={session.signature}
+                value={currentSignature}
                 onChange={updateSignature}
                 hint={translations.signatureHint}
                 clearLabel={translations.clearButton}
@@ -203,10 +218,15 @@ export default function SummaryPage() {
                 {translations.signatureSaved}
               </h2>
 
-              {session.signature && (
+              {currentSignature && (
                 <img
-                  src={session.signature}
-                  alt={translations.signatureTitle}
+                  src={currentSignature}
+                  alt={
+                    isExitSession
+                      ? translations.exitSignatureTitle ||
+                        "Signature de sortie du chauffeur"
+                      : translations.signatureTitle
+                  }
                   className="summary-page__signature-preview"
                 />
               )}

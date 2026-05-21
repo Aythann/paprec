@@ -39,7 +39,7 @@ export default function SafetyPage() {
       safetyAccepted: true,
     });
 
-    navigate("/SpecificRulesPage");
+    navigate("/specific-rules");
   };
 
   return (
