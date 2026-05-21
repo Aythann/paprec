@@ -20,11 +20,6 @@ input {
 
 button {
   border: 0;
-  cursor: pointer;
-}
-
-button:disabled {
-  cursor: not-allowed;
 }
 
 img {
@@ -34,11 +29,4 @@ img {
 
 #root {
   min-height: 100vh;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
 }

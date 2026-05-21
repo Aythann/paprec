@@ -30,8 +30,7 @@ export default function SafetyPage() {
   const languageKey = session.language?.key || "en";
 
   const translations =
-    SafetyRulesTranslations[languageKey] ||
-    SafetyRulesTranslations.en;
+    SafetyRulesTranslations[languageKey] || SafetyRulesTranslations.en;
 
   const validateSafety = () => {
     if (!checked) return;
@@ -40,14 +39,13 @@ export default function SafetyPage() {
       safetyAccepted: true,
     });
 
-    navigate("/specific-rules");
+    navigate("/SpecificRulesPage");
   };
 
   return (
     <main className="page safety-page">
       <Header title={translations.pageTitle} />
-
-      <ProgressBar step={6} />
+      <ProgressBar step={5} />
 
       <section className="safety-page__content">
         <div className="safety-page__boxes">
@@ -93,9 +91,7 @@ export default function SafetyPage() {
             <input
               type="checkbox"
               checked={checked}
-              onChange={(event) =>
-                setChecked(event.target.checked)
-              }
+              onChange={(event) => setChecked(event.target.checked)}
             />
 
             <span>{translations.checkboxText}</span>

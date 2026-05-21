@@ -18,66 +18,77 @@ export const languages = [
     image: france,
     speech: "fr-FR",
   },
+
   {
     key: "en",
     name: "English",
     image: uk,
     speech: "en-GB",
   },
+
   {
     key: "es",
     name: "Español",
     image: spain,
     speech: "es-ES",
   },
+
   {
     key: "pt",
     name: "Português",
     image: portugal,
     speech: "pt-PT",
   },
+
   {
     key: "de",
     name: "Deutsch",
     image: germany,
     speech: "de-DE",
   },
+
   {
     key: "it",
     name: "Italiano",
     image: italy,
     speech: "it-IT",
   },
+
   {
     key: "pl",
     name: "Polski",
     image: poland,
     speech: "pl-PL",
   },
+
   {
     key: "ro",
     name: "Română",
     image: romania,
     speech: "ro-RO",
   },
+
   {
     key: "ru",
     name: "Русский",
     image: russia,
     speech: "ru-RU",
   },
+
   {
     key: "ua",
     name: "Українська",
     image: ukraine,
     speech: "uk-UA",
   },
+
   {
     key: "lt",
     name: "Lietuvių",
     image: lithuania,
     speech: "lt-LT",
   },
+
   {
     key: "hr",
     name: "Hrvatski",

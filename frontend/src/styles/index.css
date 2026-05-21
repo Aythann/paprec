@@ -1,7 +1,9 @@
-@import "./base/variables.css";
 @import "./base/reset.css";
+@import "./base/variables.css";
 @import "./base/typography.css";
 @import "./base/global.css";
+
+/* Components */
 
 @import "./components/header.css";
 @import "./components/progress-bar.css";
@@ -9,17 +11,21 @@
 @import "./components/safety-box.css";
 @import "./components/safety-rule.css";
 
+/* Pages */
+
 @import "./pages/home.css";
-@import "./pages/session-type.css";
-@import "./pages/search-driver.css";
-@import "./pages/confirm-driver.css";
-@import "./pages/driver-form.css";
-@import "./pages/edit-driver.css";
-@import "./pages/departure.css";
-@import "./pages/vehicle.css";
 @import "./pages/safety.css";
-@import "./pages/specific-rules.css";
+@import "./pages/vehicle.css";
+@import "./pages/search-driver.css";
 @import "./pages/summary.css";
+@import "./pages/driver-form.css";
+@import "./pages/session-type.css";
 @import "./pages/quiz.css";
+@import "./pages/departure.css";
+@import "./pages/confirm-driver.css";
+@import "./pages/edit-driver.css";
+@import "./pages/specific-rules.css";
+
+/* Responsive */
 
 @import "./responsive.css";

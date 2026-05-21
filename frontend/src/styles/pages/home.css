@@ -10,20 +10,20 @@
 .home-page__search-icon {
   position: absolute;
   top: 50%;
-  left: 24px;
-  color: var(--color-gray-dark);
+  left: 22px;
+  z-index: 2;
   transform: translateY(-50%);
+  color: #9ca3af;
 }
 
 .home-page__search-input {
   width: 100%;
-  height: 82px;
-  padding: 0 24px 0 72px;
+  height: 78px;
+  padding: 0 24px 0 68px;
+  background: var(--color-white);
   border: 2px solid #b8c7d6;
   border-radius: 28px;
-  background: var(--color-white);
-  color: var(--color-black);
-  font-size: 26px;
+  font-size: 24px;
   transition: border-color 0.2s ease;
 }
 
@@ -40,33 +40,35 @@
 }
 
 .home-page__card {
-  min-height: 190px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  background: var(--color-white);
-  border: 3px solid transparent;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
-  color: var(--color-blue);
-  transition: 0.2s ease;
-}
-
-.home-page__card:hover {
-  border-color: var(--color-green);
-  transform: translateY(-2px);
+  position: relative;
+  width: 100%;
+  aspect-ratio: 280 / 190;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .home-page__flag {
-  width: 96px;
-  height: 64px;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .home-page__name {
-  font-size: 24px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  z-index: 2;
+  color: var(--color-white);
+  font-size: clamp(22px, 2.2vw, 30px);
   font-weight: 900;
+  text-align: center;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.9),
+    0 0 10px rgba(0, 0, 0, 0.55);
 }

@@ -1,64 +1,128 @@
 .safety-page__content {
-  display: grid;
-  gap: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
 }
 
 .safety-page__boxes {
   display: flex;
-  gap: 22px;
-  align-items: stretch;
+  gap: 18px;
 }
 
 .safety-page__rules-title {
-  color: var(--color-blue);
-  font-size: 34px;
+  font-size: 42px;
   font-weight: 900;
   text-align: center;
 }
 
 .safety-page__confirm {
-  display: grid;
-  gap: 22px;
+  padding: 34px 28px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
 }
 
 .safety-page__checkbox {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 14px;
-  font-size: 22px;
-  font-weight: 800;
+  gap: 16px;
+
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .safety-page__checkbox input {
-  width: 24px;
-  height: 24px;
+  appearance: none;
+
+  width: 32px;
+  height: 32px;
+
+  display: grid;
+  place-items: center;
+
+  margin: 0;
+
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+
+  background: var(--color-white);
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.safety-page__checkbox input::before {
+  content: "";
+
+  width: 16px;
+  height: 16px;
+
+  transform: scale(0);
+
+  transition: transform 0.15s ease;
+
+  clip-path: polygon(
+    14% 44%,
+    0 65%,
+    50% 100%,
+    100% 16%,
+    80% 0%,
+    43% 62%
+  );
+
+  background: var(--color-white);
+}
+
+.safety-page__checkbox input:checked {
+  background: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.safety-page__checkbox input:checked::before {
+  transform: scale(1);
+}
+
+.safety-page__checkbox input:focus {
+  outline: none;
+  border-color: var(--color-blue-dark);
+
+  box-shadow: 0 0 0 4px rgba(0, 74, 153, 0.12);
 }
 
 .safety-page__button {
-  width: 100%;
-  min-height: 84px;
+  min-width: 320px;
+  padding: 22px 34px;
+
   background: var(--color-blue);
   color: var(--color-white);
-  border-radius: var(--radius-lg);
-  font-size: 28px;
+
+  border-radius: var(--radius-md);
+
+  font-size: 26px;
   font-weight: 900;
+
+  transition: 0.2s ease;
 }
 
 .safety-page__button:disabled {
-  background: #cbd5e1;
-  color: #64748b;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .safety-page__footer {
-  display: grid;
-  gap: 10px;
-  padding: 24px;
-  background: #fff7ed;
-  border: 2px solid #fdba74;
-  border-radius: var(--radius-lg);
-  color: #9a3412;
-  font-size: 18px;
-  line-height: 1.35;
-  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.7;
 }
