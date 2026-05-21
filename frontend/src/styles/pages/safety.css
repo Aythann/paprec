@@ -1,0 +1,64 @@
+.safety-page__content {
+  display: grid;
+  gap: 36px;
+}
+
+.safety-page__boxes {
+  display: flex;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.safety-page__rules-title {
+  color: var(--color-blue);
+  font-size: 34px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.safety-page__confirm {
+  display: grid;
+  gap: 22px;
+}
+
+.safety-page__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.safety-page__checkbox input {
+  width: 24px;
+  height: 24px;
+}
+
+.safety-page__button {
+  width: 100%;
+  min-height: 84px;
+  background: var(--color-blue);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.safety-page__button:disabled {
+  background: #cbd5e1;
+  color: #64748b;
+}
+
+.safety-page__footer {
+  display: grid;
+  gap: 10px;
+  padding: 24px;
+  background: #fff7ed;
+  border: 2px solid #fdba74;
+  border-radius: var(--radius-lg);
+  color: #9a3412;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 700;
+}

@@ -1,0 +1,22 @@
+body {
+  background: var(--color-light);
+  color: var(--color-black);
+}
+
+.page {
+  min-height: 100vh;
+  padding: 24px;
+  background: var(--color-light);
+  overflow-x: hidden;
+}
+
+.page > * {
+  width: 100%;
+  max-width: 100%;
+}
+
+input:focus,
+button:focus-visible {
+  outline: 3px solid rgba(0, 59, 113, 0.25);
+  outline-offset: 3px;
+}

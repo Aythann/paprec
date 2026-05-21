@@ -1,0 +1,88 @@
+.edit-driver-page__content {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-driver-page__card {
+  width: min(100%, 820px);
+  padding: 42px;
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.edit-driver-page__intro {
+  margin-bottom: 30px;
+  color: var(--color-blue);
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: 800;
+  text-align: center;
+}
+
+.edit-driver-page__fields {
+  display: grid;
+  gap: 24px;
+}
+
+.edit-driver-page__field {
+  display: grid;
+  gap: 10px;
+}
+
+.edit-driver-page__field > span {
+  color: var(--color-blue);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.edit-driver-page__control {
+  display: grid;
+  grid-template-columns: 1fr 64px;
+  gap: 14px;
+}
+
+.edit-driver-page__input {
+  width: 100%;
+  height: 68px;
+  padding: 0 22px;
+  background: #f3f4f6;
+  color: var(--color-black);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.edit-driver-page__input--editable {
+  background: var(--color-white);
+  border-color: var(--color-blue);
+}
+
+.edit-driver-page__input:focus {
+  outline: none;
+  border-color: var(--color-blue);
+  box-shadow: none;
+}
+
+.edit-driver-page__edit-button {
+  width: 64px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  background: var(--color-blue);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+}
+
+.edit-driver-page__validate-button {
+  width: 100%;
+  min-height: 76px;
+  margin-top: 34px;
+  padding: 0 24px;
+  background: var(--color-green);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  font-size: 24px;
+  font-weight: 900;
+}

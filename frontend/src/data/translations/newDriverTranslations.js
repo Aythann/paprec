@@ -1,0 +1,88 @@
+const newDriverTranslations = {
+  fr: {
+    title: "Créer mon profil",
+    firstName: "Prénom",
+    lastName: "Nom",
+    company: "Entreprise",
+    validateButton: "Continuer",
+  },
+  en: {
+    title: "Create my profile",
+    firstName: "First name",
+    lastName: "Last name",
+    company: "Company",
+    validateButton: "Continue",
+  },
+  es: {
+    title: "Crear mi perfil",
+    firstName: "Nombre",
+    lastName: "Apellido",
+    company: "Empresa",
+    validateButton: "Continuar",
+  },
+  pt: {
+    title: "Criar o meu perfil",
+    firstName: "Nome",
+    lastName: "Apelido",
+    company: "Empresa",
+    validateButton: "Continuar",
+  },
+  de: {
+    title: "Mein Profil erstellen",
+    firstName: "Vorname",
+    lastName: "Nachname",
+    company: "Unternehmen",
+    validateButton: "Fortfahren",
+  },
+  it: {
+    title: "Crea il mio profilo",
+    firstName: "Nome",
+    lastName: "Cognome",
+    company: "Azienda",
+    validateButton: "Continua",
+  },
+  pl: {
+    title: "Utwórz mój profil",
+    firstName: "Imię",
+    lastName: "Nazwisko",
+    company: "Firma",
+    validateButton: "Kontynuuj",
+  },
+  ro: {
+    title: "Creează profilul meu",
+    firstName: "Prenume",
+    lastName: "Nume",
+    company: "Companie",
+    validateButton: "Continuă",
+  },
+  ru: {
+    title: "Создать мой профиль",
+    firstName: "Имя",
+    lastName: "Фамилия",
+    company: "Компания",
+    validateButton: "Продолжить",
+  },
+  ua: {
+    title: "Створити мій профіль",
+    firstName: "Ім’я",
+    lastName: "Прізвище",
+    company: "Компанія",
+    validateButton: "Продовжити",
+  },
+  lt: {
+    title: "Sukurti mano profilį",
+    firstName: "Vardas",
+    lastName: "Pavardė",
+    company: "Įmonė",
+    validateButton: "Tęsti",
+  },
+  hr: {
+    title: "Kreiraj moj profil",
+    firstName: "Ime",
+    lastName: "Prezime",
+    company: "Tvrtka",
+    validateButton: "Nastavi",
+  },
+};
+
+export default newDriverTranslations;

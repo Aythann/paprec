@@ -1,0 +1,126 @@
+@media (max-width: 1200px) {
+  .home-page__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .vehicle-page__grid--four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .specific-rules-section__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .session-type-page__grid,
+  .safety-page__boxes {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .home-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vehicle-page__grid--three,
+  .vehicle-page__grid--two {
+    grid-template-columns: 1fr;
+  }
+
+  .specific-rules-section__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .confirm-driver-page__actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 16px;
+  }
+
+  .app-header {
+    padding: 22px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .app-header__title {
+    font-size: 30px;
+  }
+
+  .app-header__right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .home-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-driver-page__toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-page__grid--four {
+    grid-template-columns: 1fr;
+  }
+
+  .safety-rules__row {
+    flex-direction: column;
+  }
+
+  .safety-rules__row--bottom .safety-rule {
+    width: 100%;
+  }
+
+  .session-type-page__title {
+    font-size: 36px;
+  }
+
+  .confirm-driver-page__question,
+  .vehicle-page__title,
+  .safety-page__rules-title,
+  .specific-rules-page__intro h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .app-header__title {
+    font-size: 24px;
+  }
+
+  .home-page__search-input,
+  .search-bar,
+  .driver-form__field input {
+    height: 68px;
+    font-size: 20px;
+  }
+
+  .home-page__card,
+  .session-type-page__card,
+  .vehicle-page__option {
+    min-height: auto;
+  }
+
+  .summary-page__warning-header p {
+    font-size: 28px;
+  }
+
+  .summary-page__warning-main {
+    font-size: 24px;
+  }
+
+  .quiz-question__title {
+    font-size: 24px;
+  }
+
+  .quiz-question__choice {
+    font-size: 18px;
+  }
+}

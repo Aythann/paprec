@@ -1,0 +1,56 @@
+.confirm-driver-page__content {
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-driver-page__card {
+  width: min(100%, 820px);
+  padding: 44px;
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.confirm-driver-page__icon {
+  margin: 0 auto 24px;
+  color: var(--color-blue);
+}
+
+.confirm-driver-page__question {
+  margin-bottom: 30px;
+  color: var(--color-blue);
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.confirm-driver-page__infos {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 36px;
+  text-align: left;
+  font-size: 26px;
+}
+
+.confirm-driver-page__actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.confirm-driver-page__button {
+  min-height: 76px;
+  padding: 0 24px;
+  border-radius: var(--radius-lg);
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.confirm-driver-page__button--yes {
+  background: var(--color-green);
+}
+
+.confirm-driver-page__button--no {
+  background: var(--color-blue);
+}
