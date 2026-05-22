@@ -133,12 +133,6 @@ export default function SpecificRulesPage() {
             {safetyTranslations.buttonText}
           </button>
         </div>
-
-        <footer className="safety-page__footer">
-          {safetyTranslations.notes.map((note) => (
-            <p key={note}>{note}</p>
-          ))}
-        </footer>
       </section>
     </main>
   );

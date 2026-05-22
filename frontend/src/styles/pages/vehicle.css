@@ -50,11 +50,6 @@
     color 0.2s ease;
 }
 
-.vehicle-page__option:hover {
-  transform: translateY(-2px);
-  border-color: var(--color-green);
-}
-
 .vehicle-page__option--selected {
   background: var(--color-green);
   color: var(--color-white);
@@ -82,7 +77,7 @@
     color 0.2s ease;
 }
 
-.vehicle-page__validate:not(:disabled):hover {
+.vehicle-page__validate:not(:disabled) {
   transform: translateY(-2px);
   background: var(--color-blue-dark);
 }
@@ -90,5 +85,4 @@
 .vehicle-page__validate:disabled {
   background: #cbd5e1;
   color: #64748b;
-  cursor: not-allowed;
 }

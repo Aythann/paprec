@@ -53,11 +53,15 @@ export default function QuizPage() {
     navigate("/summary");
   };
 
-  const readPage = () => {
-    const text = document.body.innerText;
+const readQuestion = (question) => {
+  const text = [
+    question.question,
+    ...question.choices,
+  ].join(". ");
+
     const utterance = new SpeechSynthesisUtterance(text);
 
-    utterance.lang = speechLanguage;
+    utterance.lang = speechLanguage || "en-GB";
     utterance.rate = 1;
     utterance.pitch = 1;
 
@@ -76,22 +80,20 @@ export default function QuizPage() {
 
       <section className="quiz-page__content">
         {quizQuestions.map((question, index) => (
-          <QuizQuestion
-            key={question.id}
-            question={question}
-            selected={quizAnswers[index]}
-            onSelect={(answer) => selectAnswer(index, answer)}
-            showError={
-              showErrors && Number(quizAnswers[index]) !== question.answer
-            }
-            locked={showErrors}
-            whyLabel={translations.whyLabel}
-          />
+          <div key={question.id}>
+            <QuizQuestion
+              question={question}
+              selected={quizAnswers[index]}
+              onSelect={(answer) => selectAnswer(index, answer)}
+              showError={
+                showErrors && Number(quizAnswers[index]) !== question.answer
+              }
+              locked={showErrors}
+              whyLabel={translations.whyLabel}
+              onReadQuestion={readQuestion}
+            />
+          </div>
         ))}
-
-        <button type="button" onClick={readPage} className="quiz-page__read">
-          🔊 {translations.readButton}
-        </button>
 
         <button
           type="button"

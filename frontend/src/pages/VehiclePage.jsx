@@ -44,7 +44,7 @@ export default function VehiclePage() {
             {translations.equipmentTitle}
           </h2>
 
-          <div className="vehicle-page__grid vehicle-page__grid--two">
+          <div className="vehicle-page__grid vehicle-page__grid--four">
             {translations.equipmentTypes.map((equipmentType) => (
               <button
                 key={equipmentType.key}
@@ -52,7 +52,7 @@ export default function VehiclePage() {
                 onClick={() =>
                   selectOption("equipmentType", equipmentType.key)
                 }
-                className={`vehicle-page__option ${
+                className={`vehicle-page__option vehicle-page__option--small ${
                   session.equipmentType === equipmentType.key
                     ? "vehicle-page__option--selected"
                     : ""

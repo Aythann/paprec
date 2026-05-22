@@ -29,15 +29,6 @@
     box-shadow 0.2s ease;
 }
 
-.session-type-page__card:hover {
-  transform: translateY(-3px);
-
-  border-color: rgba(0, 59, 113, 0.2);
-
-  box-shadow:
-    0 16px 36px rgba(0, 59, 113, 0.14);
-}
-
 .session-type-page__icon {
   color: var(--color-blue);
 }

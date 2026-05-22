@@ -1,10 +1,10 @@
 .safety-box {
-  flex: 1;
   min-width: 0;
-  padding: 22px;
-  display: flex;
-  flex-direction: column;
+  min-height: 220px;
+  padding: 24px 28px;
+
   background: var(--color-white);
+
   border: 4px solid var(--color-gray);
   border-radius: var(--radius-md);
 }
@@ -22,63 +22,91 @@
 }
 
 .safety-box__title {
-  min-height: 66px;
   margin-bottom: 18px;
-  font-size: 26px;
-  line-height: 1.15;
+
+  font-size: 30px;
+  line-height: 1.12;
   font-weight: 900;
 }
 
-.safety-box__images {
-  min-height: 220px;
-  margin-bottom: 18px;
-  padding-top: 14px;
+.safety-box__body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
 }
 
-.safety-box__image-row {
+.safety-box__images {
+  flex: 1 1 80%;
+  min-width: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.safety-box__image-row--1 {
-  gap: 18px;
-}
-
-.safety-box__image-row--2 {
-  gap: 28px;
-  margin-top: 14px;
-}
-
-.safety-box__image-row--3 {
-  gap: 26px;
-  margin-top: 14px;
+  flex-wrap: nowrap;
+  gap: 24px;
 }
 
 .safety-box__image {
-  width: 72px;
-  height: 72px;
+  width: 90px;
+  height: 90px;
+
   object-fit: contain;
+
+  flex: 0 0 auto;
 }
 
-.safety-box__images--prohibition .safety-box__image-row--1,
-.safety-box__images--prohibition .safety-box__image-row--2 {
-  gap: 22px;
+.safety-box__separator {
+  width: 2px;
+  min-height: 120px;
+  margin: 0 28px;
+
+  background: #d7dde5;
+
+  flex: 0 0 auto;
 }
 
 .safety-box__list {
-  margin: auto 0 0;
+  flex: 0 0 20%;
+  min-width: 320px;
+
+  margin: 0;
   padding: 0;
-  display: grid;
-  gap: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 16px;
+
   list-style: none;
 }
 
 .safety-box__item {
-  font-size: 18px;
+  font-size: 21px;
   line-height: 1.25;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .safety-box__body {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .safety-box__images {
+    flex-wrap: wrap;
+  }
+
+  .safety-box__separator {
+    width: 100%;
+    height: 2px;
+    min-height: 2px;
+    margin: 0;
+  }
+
+  .safety-box__list {
+    flex: 1;
+    min-width: 0;
+  }
 }

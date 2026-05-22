@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { useApp } from "../context/AppContext";
+
 import SafetyRulesTranslations from "../data/translations/SafetyRulesTranslations";
 
 import Header from "../components/common/Header";
@@ -13,12 +14,6 @@ import { risksImages } from "../data/safety/risks";
 import { obligationsImages } from "../data/safety/obligations";
 import { prohibitionsImages } from "../data/safety/prohibitions";
 import { rulesImages } from "../data/safety/rules";
-
-const safetyBoxImages = {
-  risk: risksImages,
-  obligation: obligationsImages,
-  prohibition: prohibitionsImages,
-};
 
 export default function SafetyPage() {
   const [checked, setChecked] = useState(false);
@@ -45,19 +40,31 @@ export default function SafetyPage() {
   return (
     <main className="page safety-page">
       <Header title={translations.pageTitle} />
+
       <ProgressBar step={5} />
 
       <section className="safety-page__content">
         <div className="safety-page__boxes">
-          {translations.sections.map((section) => (
-            <SafetyBox
-              key={section.variant}
-              title={section.title}
-              variant={section.variant}
-              images={safetyBoxImages[section.variant]}
-              items={section.items}
-            />
-          ))}
+          <SafetyBox
+            title={translations.sections[0].title}
+            variant={translations.sections[0].variant}
+            images={risksImages}
+            items={translations.sections[0].items}
+          />
+
+          <SafetyBox
+            title={translations.sections[1].title}
+            variant={translations.sections[1].variant}
+            images={obligationsImages}
+            items={translations.sections[1].items}
+          />
+
+          <SafetyBox
+            title={translations.sections[2].title}
+            variant={translations.sections[2].variant}
+            images={prohibitionsImages}
+            items={translations.sections[2].items}
+          />
         </div>
 
         <h2 className="safety-page__rules-title">
@@ -65,25 +72,13 @@ export default function SafetyPage() {
         </h2>
 
         <div className="safety-rules">
-          <div className="safety-rules__row safety-rules__row--top">
-            {translations.rules.slice(0, 3).map((rule, index) => (
-              <SafetyRule
-                key={rule}
-                image={rulesImages[index]}
-                text={rule}
-              />
-            ))}
-          </div>
-
-          <div className="safety-rules__row safety-rules__row--bottom">
-            {translations.rules.slice(3, 5).map((rule, index) => (
-              <SafetyRule
-                key={rule}
-                image={rulesImages[index + 3]}
-                text={rule}
-              />
-            ))}
-          </div>
+          {translations.rules.map((rule, index) => (
+            <SafetyRule
+              key={rule}
+              image={rulesImages[index]}
+              text={rule}
+            />
+          ))}
         </div>
 
         <div className="safety-page__confirm">
@@ -106,12 +101,6 @@ export default function SafetyPage() {
             {translations.buttonText}
           </button>
         </div>
-
-        <footer className="safety-page__footer">
-          {translations.notes.map((note) => (
-            <p key={note}>{note}</p>
-          ))}
-        </footer>
       </section>
     </main>
   );

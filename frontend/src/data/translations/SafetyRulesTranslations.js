@@ -46,15 +46,15 @@ const SafetyRulesTranslations = {
       "Seul le conducteur peut descendre.",
       "Respecter le sens de circulation.",
       "Priorité aux camions en sortie de pesée.",
+      "Bâchage / débâchage uniquement sur parking PL. Passerelle FMA : demander à la bascule.",
+      "En coactivité, vider seulement quand l’engin est immobile, grappin ou godet au sol.",
+      "Bascule occupée : ne pas entrer sur site. Attendre dans la rue.",
+      "Après opération, vérifier et nettoyer tout déchet accroché au véhicule ou laissé sur zone.",
+      "Le site peut refuser l’opération si le chauffeur ou le véhicule génère un risque.",
     ],
 
     checkboxText: "J'ai bien pris connaissance des règles de sécurité",
     buttonText: "Continuer",
-
-    notes: [
-      "NOTA 1 : Après chargement/déchargement, le chauffeur doit vérifier la propreté de la zone.",
-      "NOTA 2 : L’entreprise d’accueil peut refuser l’opération si le comportement ou le véhicule présente un danger.",
-    ],
   },
 
   en: {
@@ -104,15 +104,15 @@ const SafetyRulesTranslations = {
       "Only the driver may exit.",
       "Respect traffic direction.",
       "Priority to trucks leaving the weighing area.",
+      "Sheeting / unsheeting only in the truck parking area. FMA walkway: ask at the weighbridge.",
+      "In co-activity areas, unload only when the machinery is stationary with grapple or bucket on the ground.",
+      "If a truck is on the weighbridge, do not enter the site. Wait in the street.",
+      "After loading / unloading, check and clean any waste remaining on the vehicle or area.",
+      "The site may refuse the operation if the driver's behavior or vehicle creates a risk.",
     ],
 
     checkboxText: "I have read and understood the safety rules",
     buttonText: "Continue",
-
-    notes: [
-      "NOTE 1: After loading/unloading, the driver must check the cleanliness of the area.",
-      "NOTE 2: The host company may refuse the operation if behavior or the vehicle presents a danger.",
-    ],
   },
 
   es: {
@@ -162,15 +162,15 @@ const SafetyRulesTranslations = {
       "Solo el conductor puede bajar.",
       "Respetar el sentido de circulación.",
       "Prioridad a los camiones que salen del pesaje.",
+      "Lona / retirada de lona solo en el aparcamiento de camiones. Pasarela FMA: solicitar en báscula.",
+      "En zonas de coactividad, descargar solo cuando la máquina esté inmóvil con pinza o cuchara en el suelo.",
+      "Si hay un camión en la báscula, no entrar al sitio. Esperar en la calle.",
+      "Después de la operación, comprobar y limpiar cualquier residuo restante en el vehículo o la zona.",
+      "El sitio puede rechazar la operación si el comportamiento del conductor o el vehículo generan un riesgo.",
     ],
 
     checkboxText: "He leído y comprendido las normas de seguridad",
     buttonText: "Continuar",
-
-    notes: [
-      "NOTA 1: Después de la carga/descarga, el conductor debe comprobar la limpieza de la zona.",
-      "NOTA 2: La empresa receptora puede rechazar la operación si el comportamiento o el vehículo presentan un peligro.",
-    ],
   },
 
   pt: {
@@ -220,15 +220,15 @@ const SafetyRulesTranslations = {
       "Apenas o condutor pode sair.",
       "Respeitar o sentido de circulação.",
       "Prioridade aos camiões na saída da pesagem.",
+      "Cobertura / descoberta apenas no parque de camiões. Passarela FMA: pedir na balança.",
+      "Em zonas de coatividade, descarregar apenas quando a máquina estiver imóvel com garra ou balde no chão.",
+      "Se houver um camião na balança, não entrar no local. Esperar na rua.",
+      "Após a operação, verificar e limpar qualquer resíduo restante no veículo ou na zona.",
+      "O local pode recusar a operação se o comportamento do condutor ou o veículo gerarem risco.",
     ],
 
     checkboxText: "Li e compreendi as regras de segurança",
     buttonText: "Continuar",
-
-    notes: [
-      "NOTA 1: Após carga/descarga, o condutor deve verificar a limpeza da zona.",
-      "NOTA 2: A empresa de acolhimento pode recusar a operação se o comportamento ou o veículo apresentarem perigo.",
-    ],
   },
 
   de: {
@@ -278,15 +278,15 @@ const SafetyRulesTranslations = {
       "Nur der Fahrer darf aussteigen.",
       "Verkehrsrichtung beachten.",
       "Vorfahrt für Lkw beim Verlassen der Waage.",
+      "Abdecken / Aufdecken nur auf dem Lkw-Parkplatz. FMA-Laufsteg an der Waage anfordern.",
+      "In Bereichen mit gleichzeitigen Tätigkeiten nur entladen, wenn die Maschine stillsteht und Greifer oder Schaufel am Boden sind.",
+      "Wenn sich ein Lkw auf der Waage befindet, das Gelände nicht betreten. Auf der Straße warten.",
+      "Nach dem Vorgang alle am Fahrzeug oder im Bereich verbleibenden Abfälle kontrollieren und reinigen.",
+      "Der Standort kann den Vorgang verweigern, wenn das Verhalten des Fahrers oder das Fahrzeug ein Risiko darstellt.",
     ],
 
     checkboxText: "Ich habe die Sicherheitsregeln gelesen und verstanden",
     buttonText: "Weiter",
-
-    notes: [
-      "HINWEIS 1: Nach dem Be- und Entladen muss der Fahrer die Sauberkeit des Bereichs überprüfen.",
-      "HINWEIS 2: Das empfangende Unternehmen kann den Vorgang verweigern, wenn das Verhalten oder das Fahrzeug eine Gefahr darstellt.",
-    ],
   },
 
   it: {
@@ -336,15 +336,15 @@ const SafetyRulesTranslations = {
       "Solo il conducente può scendere.",
       "Rispettare il senso di circolazione.",
       "Priorità ai camion in uscita dalla pesa.",
+      "Copertura / scopertura solo nel parcheggio camion. Passerella FMA: richiedere alla pesa.",
+      "Nelle aree di coattività, scaricare solo quando il mezzo è fermo con pinza o benna a terra.",
+      "Se è presente un camion sulla pesa, non entrare nel sito. Attendere sulla strada.",
+      "Dopo l’operazione, controllare e pulire eventuali rifiuti rimasti sul veicolo o nell’area.",
+      "Il sito può rifiutare l’operazione se il comportamento del conducente o il veicolo generano un rischio.",
     ],
 
     checkboxText: "Ho letto e compreso le regole di sicurezza",
     buttonText: "Continua",
-
-    notes: [
-      "NOTA 1: Dopo il carico/scarico, il conducente deve verificare la pulizia dell'area.",
-      "NOTA 2: L'azienda ospitante può rifiutare l'operazione se il comportamento o il veicolo rappresentano un pericolo.",
-    ],
   },
 
   pl: {
@@ -394,15 +394,15 @@ const SafetyRulesTranslations = {
       "Tylko kierowca może wysiadać.",
       "Przestrzegać kierunku ruchu.",
       "Pierwszeństwo dla ciężarówek opuszczających wagę.",
+      "Plandekowanie / odkrywanie tylko na parkingu dla ciężarówek. Kładka FMA: zapytać przy wadze.",
+      "W strefach współpracy rozładowywać tylko wtedy, gdy maszyna stoi nieruchomo, a chwytak lub łyżka są na ziemi.",
+      "Jeśli na wadze znajduje się ciężarówka, nie wjeżdżać na teren. Czekać na ulicy.",
+      "Po operacji sprawdzić i usunąć wszystkie odpady zaczepione o pojazd lub pozostawione w strefie.",
+      "Zakład może odmówić operacji, jeśli zachowanie kierowcy lub stan pojazdu generuje ryzyko.",
     ],
 
     checkboxText: "Zapoznałem(-am) się z zasadami bezpieczeństwa",
     buttonText: "Kontynuuj",
-
-    notes: [
-      "UWAGA 1: Po załadunku/rozładunku kierowca musi sprawdzić czystość strefy.",
-      "UWAGA 2: Firma przyjmująca może odmówić wykonania operacji, jeśli zachowanie lub pojazd stanowią zagrożenie.",
-    ],
   },
 
   ro: {
@@ -452,15 +452,15 @@ const SafetyRulesTranslations = {
       "Doar șoferul poate coborî.",
       "Respectați sensul de circulație.",
       "Prioritate camioanelor care ies de la cântar.",
+      "Prelată / deprelată doar în parcarea pentru camioane. Pasarelă FMA: solicitați la cântar.",
+      "În zone de coactivitate, descărcați doar când utilajul este imobil, cu cupa sau gheara la sol.",
+      "Dacă există un camion pe cântar, nu intrați pe site. Așteptați pe stradă.",
+      "După operațiune, verificați și curățați orice deșeu agățat de vehicul sau rămas în zonă.",
+      "Site-ul poate refuza operațiunea dacă șoferul sau vehiculul generează un risc.",
     ],
 
     checkboxText: "Am luat la cunoștință regulile de siguranță",
     buttonText: "Continuă",
-
-    notes: [
-      "NOTĂ 1: După încărcare/descărcare, șoferul trebuie să verifice curățenia zonei.",
-      "NOTĂ 2: Compania gazdă poate refuza operațiunea dacă comportamentul sau vehiculul prezintă un pericol.",
-    ],
   },
 
   ru: {
@@ -510,15 +510,15 @@ const SafetyRulesTranslations = {
       "Только водитель может выходить.",
       "Соблюдать направление движения.",
       "Приоритет грузовикам, выезжающим с весовой.",
+      "Накрытие / снятие тента только на стоянке грузовиков. Переход FMA: запросить на весовой.",
+      "В зоне совместной работы разгружать только когда техника неподвижна, а ковш или захват находятся на земле.",
+      "Если на весовой находится грузовик, не въезжать на территорию. Ждать на улице.",
+      "После операции проверить и убрать любые отходы, оставшиеся на транспортном средстве или в зоне.",
+      "Площадка может отказать в операции, если поведение водителя или состояние транспорта создаёт риск.",
     ],
 
     checkboxText: "Я ознакомился(ась) с правилами безопасности",
     buttonText: "Продолжить",
-
-    notes: [
-      "ПРИМЕЧАНИЕ 1: После погрузки/разгрузки водитель должен проверить чистоту зоны.",
-      "ПРИМЕЧАНИЕ 2: Принимающая компания может отказать в проведении операции, если поведение или транспортное средство представляют опасность.",
-    ],
   },
 
   ua: {
@@ -568,15 +568,15 @@ const SafetyRulesTranslations = {
       "Лише водій може виходити.",
       "Дотримуватися напрямку руху.",
       "Пріоритет вантажівкам, що виїжджають з вагової.",
+      "Накриття / зняття тенту лише на стоянці вантажівок. Місток FMA: звернутися на вагову.",
+      "У зоні спільної роботи розвантажувати лише коли техніка нерухома, а ківш або захват на землі.",
+      "Якщо на ваговій є вантажівка, не заїжджати на територію. Чекати на вулиці.",
+      "Після операції перевірити та прибрати всі відходи, що залишилися на транспорті або в зоні.",
+      "Підприємство може відмовити в операції, якщо поведінка водія або стан транспорту створює ризик.",
     ],
 
     checkboxText: "Я ознайомився(лася) з правилами безпеки",
     buttonText: "Продовжити",
-
-    notes: [
-      "ПРИМІТКА 1: Після завантаження/розвантаження водій повинен перевірити чистоту зони.",
-      "ПРИМІТКА 2: Приймаюча компанія може відмовити у виконанні операції, якщо поведінка або транспортний засіб становлять небезпеку.",
-    ],
   },
 
   lt: {
@@ -626,15 +626,15 @@ const SafetyRulesTranslations = {
       "Tik vairuotojas gali išlipti.",
       "Laikytis eismo krypties.",
       "Pirmenybė sunkvežimiams, išvažiuojantiems iš svarstyklių zonos.",
+      "Tentą uždengti / nuimti tik sunkvežimių aikštelėje. FMA tiltelis: kreiptis į svarstykles.",
+      "Bendros veiklos zonose iškrauti tik tada, kai technika nejuda, o kaušas ar griebtuvas yra ant žemės.",
+      "Jei ant svarstyklių yra sunkvežimis, neįvažiuoti į teritoriją. Laukti gatvėje.",
+      "Po operacijos patikrinti ir išvalyti visas atliekas, likusias ant transporto priemonės ar zonoje.",
+      "Objektas gali atsisakyti operacijos, jei vairuotojo elgesys ar transporto priemonės būklė kelia riziką.",
     ],
 
     checkboxText: "Susipažinau su saugos taisyklėmis",
     buttonText: "Tęsti",
-
-    notes: [
-      "PASTABA 1: Po pakrovimo/iškrovimo vairuotojas turi patikrinti zonos švarą.",
-      "PASTABA 2: Priimanti įmonė gali atsisakyti operacijos, jei elgesys arba transporto priemonė kelia pavojų.",
-    ],
   },
 
   hr: {
@@ -684,15 +684,15 @@ const SafetyRulesTranslations = {
       "Samo vozač može izaći.",
       "Poštujte smjer kretanja.",
       "Prednost kamionima koji izlaze s vage.",
+      "Pokrivanje / otkrivanje samo na parkiralištu za kamione. FMA prolaz zatražiti na vagi.",
+      "U zonama zajedničkog rada istovarivati samo kada je stroj nepomičan, a hvataljka ili žlica na tlu.",
+      "Ako je kamion na vagi, ne ulaziti na lokaciju. Čekati na ulici.",
+      "Nakon operacije provjeriti i očistiti sav otpad koji je ostao na vozilu ili području.",
+      "Lokacija može odbiti operaciju ako ponašanje vozača ili stanje vozila predstavlja rizik.",
     ],
 
     checkboxText: "Pročitao/la sam i razumio/la sigurnosna pravila",
     buttonText: "Nastavi",
-
-    notes: [
-      "NAPOMENA 1: Nakon utovara/istovara vozač mora provjeriti čistoću područja.",
-      "NAPOMENA 2: Tvrtka domaćin može odbiti operaciju ako ponašanje ili vozilo predstavljaju opasnost.",
-    ],
   },
 };
 

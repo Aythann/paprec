@@ -5,10 +5,24 @@ export default function QuizQuestion({
   showError,
   locked,
   whyLabel,
+  onReadQuestion,
 }) {
   return (
     <article className="quiz-question">
-      <h2 className="quiz-question__title">{question.question}</h2>
+
+      <div className="quiz-question__header">
+        <h2 className="quiz-question__title">
+          {question.question}
+        </h2>
+
+        <button
+          type="button"
+          onClick={() => onReadQuestion(question)}
+          className="quiz-question__speech"
+        >
+          🔊
+        </button>
+      </div>
 
       <div className="quiz-question__choices">
         {question.choices.map((choice, index) => (

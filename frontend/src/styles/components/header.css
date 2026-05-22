@@ -79,7 +79,6 @@
   text-align: left;
 }
 
-.app-header__language-option:hover,
 .app-header__language-option--active {
   background: var(--color-blue);
   color: var(--color-white);
