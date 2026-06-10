@@ -5,7 +5,7 @@ import AppRouter from "./router/AppRouter";
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/paprec">
         <AppRouter />
       </BrowserRouter>
     </AppProvider>
